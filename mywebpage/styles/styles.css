@@ -1,0 +1,261 @@
+* {
+    box-sizing: border-box;
+}
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-size: 18px;
+    background-color: aliceblue;
+    font-family: "Catamaran", sans-serif;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+}
+
+.fa-bars {
+  padding-left: 180px;
+  margin-top: 10px;
+  color: aliceblue;
+}
+
+@media only screen and (min-width: 768px) {
+  .fa-bars{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+    .container {
+      max-width: auto;
+      width: 100%;
+      padding: 0 20px;
+    }
+  }
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: right;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    z-index: 2;
+    position: relative;
+  }
+
+  @media screen and (min-width: 1140px) {
+    li {
+    list-style-type:none;
+    float:left;
+    padding-top: 25px;
+  }
+}
+
+.menu a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 18px;
+  border-bottom: 3px solid transparent;
+  transition: border-bottom 0.5s ease-in;
+  color: aliceblue;
+}
+
+.menu a:hover {
+  border-bottom: 3px solid aliceblue;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+  .menu li {
+    display: block; 
+  }
+  .menu a {
+    display: table-row;
+  }
+  .menu li:hover {
+    border-bottom: 3px solid aliceblue;
+  }
+  .mobile-menu-icon {
+    display: inline-block;
+  }
+  .mobile-menu-icon:hover {
+    cursor: pointer;
+  }
+  .mobile-menu-icon.open i:before {
+    content: "\f00d";
+  }
+  .menu.opened {
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    text-align: right;
+  }
+}
+
+.name {
+    padding: 350px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: #F8F8FF;
+}
+
+
+@media screen and (max-width: 768px) {
+  .name {
+    display: block;
+    width: 100%;
+    padding: 200px 0px;
+    text-align: center;
+  }
+}
+  
+
+.hero {
+    background: url("/images/pexels-sonny-sixteen-7784957.jpg");
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 100vh;
+    padding-left: 60px;
+    position: relative;
+}
+
+.container {
+    max-width: auto;
+    margin: 0 auto;
+}
+
+.positions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #F8F8FF;
+}
+
+@media screen and (max-width: 768px) {
+  .positions {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+  flex-wrap: wrap;
+  row-gap: 25px;
+  text-align: center;
+  padding: 50px 200px;
+  background-color: #F8F8FF;
+}
+
+.fa-github {
+  color: #414455;
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    text-align: center;
+    padding: 50px;
+  }
+}
+
+.quote {
+    padding: 30px;
+    background-color: #414455;
+    justify-content: space-around;
+    text-align: center;
+    color: #F8F8FF;
+}
+
+.quote-text {
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 20px;
+    z-index: 2;
+    position: relative;
+  }
+  
+
+.fa-quote-left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+  .quote {
+    max-width: 100%;
+    margin: 0;
+  }
+}
+
+.description {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer {
+    padding: 30px;
+    background-color: #414455;
+    color: #F8F8FF;
+  }
+  
+  .copyright,
+  .social {
+    width: 49%;
+    display: inline-block;
+  }
+  
+  .social {
+    text-align: right;
+  }
+  
+  .social a {
+    color: #F8F8FF;
+    text-decoration: none;
+    padding-left: 10px;
+  }
+  
+  .copyright {
+    font-size: 14px;
+  }
+  
+.copyright a {
+  color: #F8F8FF;
+}
+
+  @media screen and (max-width: 768px) {
+    .social,
+    .copyright {
+      width: 100%;
+      display: block;
+      text-align: center;
+    }
+    .social {
+      margin-top: 30px;
+    }
+  }
+
